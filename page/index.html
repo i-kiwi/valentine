@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=5.0">
+    <title>情人节</title>
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/adaptational.3.0.js"></script>
+</head>
+<body>
+    <!--section1: 首页主界面-->
+    <section class="indexpannel" id="indexpannel">
+        <img src="../images/logo.png" alt="" class="logo">
+        <div class="rules">活动规则?</div>
+        <div class="contentimg"></div>
+
+        <!--选择性别-->
+        <p class="checkarea">
+            <label for="" class="checkopt">
+                <input type="radio" value="0" checked='checked' name="gender">
+                <img src="../images/beauty.png" alt="" class="copt1">
+            </label>
+            <label for="" class="checkopt">
+                <input type="radio" value="1" name="gender">
+                <img src="../images/handsome.png" alt="" class="copt1">
+            </label>
+        </p>
+
+        <!--开始选礼物按钮-->
+        <button id='btnSelGift' class="goplay indexgoplay"></button>
+    </section>
+
+
+    <!--section2: 答题出题主界面 (性别: boy/girl  答题操作: answer) -->
+    <section class="pannel" id="pannel">
+        <img src="../images/logo.png" alt="" class="logo">
+        <div class="rules">活动规则？</div>
+
+        <!--礼物选择box (不可编辑: disabled)-->
+        <ul class="pics" id="picsBox">
+            <!--
+                各种状态：对: succ   错: fail  
+                出题已选定(可取消): selected  
+                答题已点击(不可取消): checked
+            -->
+            <li class="pic pic1" id="check1">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic2" id="check2">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic3" id="check3">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic4" id="check4">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic5" id="check5">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic6" id="check6">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic7" id="check7">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic8" id="check8">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic9" id="check9">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic10" id="check10">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic11" id="check11">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic12" id="check12">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic13" id="check13">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic14" id="check14">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic15" id="check15">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+            <li class="pic pic16" id="check16">
+                <div class="arrow"></div>
+                <div class="imgs"></div>
+            </li>
+        </ul>
+        <div class="bang"></div>
+
+        <!--我也要玩按钮-->
+        <button id="btnPlayToo" class="goplay pgoplay"></button>
+
+        <!--找TA测测按钮-->
+        <button id="btnTestTA" class="goplay pgoplayta"></button>
+    </section>
+
+
+    <!--section3: 活动规则-->
+    <section class="rulepannel" id='rulepannel'></section>
+
+
+    <!--section4: 默契排名-->
+    <section class="mqpannel" id="mqpannel">
+        <div class='rulecover'>
+            <div class='closepannel'></div>
+            <img src='../images/mq.png' alt='' class='rulehead'>
+
+            <!--排名列表-->
+            <ul class="banglist">
+          <!--       <li class="blist">
+                    <div class="headimg showhimg" data-ind='1'>
+                        <img src="../images/WechatIMG10.png" alt="" class="himg">
+                    </div>
+                    <div class="info">
+                        <p class="name">whatever</p>
+                        <p class="answers"><span class="ans">somth</span><span class="percent">50%</span></p>
+                    </div>
+                </li>
+                <li class="blist">
+                    <div class="headimg showhimg" data-ind='2'>
+                        <img src="../images/WechatIMG10.png" alt="" class="himg">
+                    </div>
+                    <div class="info">
+                        <p class="name">whatever</p>
+                        <p class="answers"><span class="ans">somth</span><span class="percent">50%</span></p>
+                    </div>
+                </li> -->
+            </ul>
+            <p class="nodata">暂无排名数据</p>
+        </div>
+    </section>
+
+
+    <!--section5: 匹配度结果-->
+    <section class="dialogpannel girl boy" id="dialogpannel">
+        <div class="dialog">
+            <div class="closepannel"></div>
+            <div class="dcontent">
+                <div class="dhead">
+                    <b class="dhimg"></b>
+                    <span class="per" id="matchPercent">83%</span>
+                </div>
+                <div class="ddesc" id="matchDesc">
+                    <!-- 居然都对啦，是不是都送给TA<br/>买噶得,我要静静! -->
+                </div>
+                <ul class="results" id="matchRsltList">
+<!--                     <li class="reli">
+                        <div class="repic repic14"></div>
+                    </li>
+                    <li class="reli">
+                        <div class="repic repic15"></div>
+                    </li>
+                    <li class="reli">
+                        <div class="repic repic16"></div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!--section6: 找TA测测分享蒙层-->
+    <section class="sharemask" id="shareMask">
+        <img src="../images/shareword.png" class="shareword" />
+        <img src="../images/shareclose.png" class="shareclose" />
+    </section>
+
+
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/wechatShare.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+    "returnCode":"SUCCESS",
+    "returnMessage":"答题成功",
+    "returnItem":{
+        "score":"分数",
+        "rank":[{
+            "openId":"用户ID",
+            "name":"姓名",
+            "headImg":"头像地址",
+            "score":"分数",
+            "theAnswer":["答案集合"]
+        }]
+    }
+}

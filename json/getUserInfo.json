@@ -1,0 +1,22 @@
+{
+    "returnCode":"SUCCESS",
+    "returnMessage":"获取成功",
+    "returnItem":{
+        "linkFlag":"链接标识：'false'未标记|'true'已标记",
+        "questionFlag":"出题标识：'true'已出题①|'false'未出题",
+        "masterFlag":"出题者标识：'true'本人①|'false'非本人",
+        "answeredFlag":"答题标识：'true'已答①②|'false'未答",
+        "①theAnswer":["出题者的答案集合"],
+        "②answer":["回答者的答案集合"],
+        "name":"出题人姓名",
+        "gender":"出题人性别",
+        "headImg":"出题人头像地址",
+        "rank(排名)":[{
+            "openId":"用户ID",
+            "name":"姓名",
+            "headImg":"头像",
+            "score":"分数",
+            "theAnswer":["答案集合"]
+        }]
+    }
+}
